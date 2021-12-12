@@ -1,0 +1,29 @@
+
+
+.card {
+  margin: 0.5rem;
+  flex: 1 1 auto;
+  position: relative;
+  border: 2px solid black;
+}
+
+.image {
+  object-fit: cover;
+  border: 2px solid black;
+  transition: all 5s cubic-bezier(0.14, 0.96, 0.91, 0.6);
+}
+
+.info {
+  background: white;
+  padding: 1.5rem;
+  text-align: center;
+  cursor: pointer;
+}
+
+.card:hover .image {
+  transform: scale(1.2);
+}
+
+.card:hover .info {
+  opacity: 0.9;
+}

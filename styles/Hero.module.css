@@ -1,0 +1,56 @@
+/* .hero {
+  display: flex;
+} */
+
+.image {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.taglinecontainer {
+  width: 100%;
+  color: white;
+  text-shadow: -2px 2px 3px teal, 1px 1px 2px teal, 1px -1px 0 teal,
+    -1px -1px 0 teal;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+  background: url(http://res.cloudinary.com/dhcagrzcb/image/upload/v1626735924/mountain-547363_jrh8ct.jpg)
+    no-repeat center;
+  background-size: cover;
+}
+.button {
+  width: 200px;
+  height: 50px;
+  margin-top: 1rem;
+  padding: 8px;
+  background: rgb(0, 128, 128);
+  text-transform: uppercase;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.button:hover {
+  background: white;
+  color: teal;
+  border: 1px solid teal;
+}
+
+@media screen and (max-width: 600px) {
+  .hero {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+
+  .tagline {
+    width: 100%;
+    background-size: cover;
+    border-radius: 10px;
+  }
+}

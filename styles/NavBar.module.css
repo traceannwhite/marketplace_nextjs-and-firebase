@@ -1,0 +1,16 @@
+.header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header img {
+  width: 250px;
+  height: 100px;
+}
+
+@media screen and (max-width: 500px) {
+}

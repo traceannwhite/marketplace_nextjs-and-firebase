@@ -1,0 +1,51 @@
+.cardcontainer {
+  padding: 0 0 1em 0;
+}
+.card {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  max-width: 290px;
+}
+
+.text {
+  grid-row: 2 / 3;
+  display: grid;
+  grid-template-rows: 2fr 0.5fr 0.5fr;
+}
+.title {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.seller {
+  font-size: 0.8rem;
+  color: teal;
+}
+
+.image {
+  max-height: 200px;
+  min-height: 200px;
+  min-width: 290px;
+  max-width: 290px;
+  transition: all 5s cubic-bezier(0.14, 0.96, 0.91, 0.6);
+  grid-row: 1 / 2;
+  object-fit: cover;
+}
+
+.button {
+  width: 100%;
+  padding: 1em;
+  background: teal;
+  text-transform: uppercase;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  max-width: 350px;
+}
+
+.button:hover {
+  background: white;
+  color: teal;
+  border: 1px solid teal;
+}
